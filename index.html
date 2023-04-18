@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Pessoal - Raul</title>
+    <!-- Importando fontes do google para a pagina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet">
+    <!-- Referenciando o Css da pagina -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<!-- × -->
+<body class="img-principal">
+    <!-- Criando o icone do menu quando ficar em tela pequena -->
+    <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <!-- Criando menu -->
+    <aside class="menu">
+        <div class="main-content menu-content">
+            <!-- JS para fechar o menu quando clicar em alguma seção -->
+            <h1 <ul onclick="getElementById('close-menu').checked = false;">
+                <a href="#intro">RT</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#pessoal">Quem sou</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#redes-sociais">Redes Socais</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- criando uma classe para colocar um espaçamento e o texto nao ficar atras do menu e sim em baixo do menu, pelo fato do menu estar sempre fixo-->
+    <div class="espacamento-menu"></div>
+    <!-- criando uma seção para ser a pagina de intro do site -->
+    <section id="intro" class="intro img-principal section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+
+                <h2>Meu <br>Projeto Todo em HTML & CSS.</h2>
+                <p>Olá, este projeto de Landing Page é todo feito em HTML e CSS, um projeto feito por mim (Raul),
+                    fazendo o curso da Udemy, ministrado pelo professor Otavio Miranda. Este é o meu quarto projeto que
+                    eu fiz o deploy, os outros 3 foram feitos em Python utilizando o framework Django, e todos os htmls
+                    e css utilizados neles tinham sido ja prontos, este é o primeiro feito a mão, codigo por codigo
+                    digitado por mim.</p>
+            </div>
+            <div class="intro-img"><img src="assets/img/img-html-css-mukup.svg" alt="imagem css e html"></div>
+        </div>
+    </section>
+    <section class="main-bg section">
+        <div id="pessoal" class="main-content pessoal-content">
+            <h2>Quem sou Eu</h2>
+            <p>Olá prazer, Me chamo Raul Teles, Tenho 25 anos sou da cidade de Recife-PE. </p>
+            <p>Eu sou uma pessoa que sempre gostei da área de tecnologia, desde criança (Agradeço ao meu pai por isso, pois foi devido ao esforço dele para montar um PCzinho para mim) e sempre sonhei trabalhar na área, mesmo não sabendo onde especificamente, mas sempre tive a certeza de quis trabalhar nesta área de Tecnologia. Hoje após algumas experiências e também logo após iniciar o meu Curso de Bacharel em Ciência da Computação, me achei onde eu gostaria de trablhar efetivamente, e  é esta área, a de Desenvolvimento. </p>
+            <p>Porém por mais que eu tenha me identificado, ainda não conseguir definir o quão especifico quero trabalhar, falo isso referente a área de Front-end, Back-and, DBA, Mobile, etc. Como eu sou novo na área, eu venho "Atirando para todos os lados", desenvolvendo projetos em cada área dessa para quando aparecer alguma oportunidade, eu pelo menos ter "um pouco de noção", e ai sim... Focar nela, e mergulhar em definitivo na Área.</p>
+            <p>Venho estudado muito, venho me dedicando muito e eu sei que um dia eu irei conseguir conquistar mais este objetivo</p>
+        </div>
+    </section>
+    <section class="projetos img-principal section">
+        <div id="projetos" class="projetos-content main-content">
+            <h2>Alguns projetos...</h2>
+            <p><i>Esta seção eu dediquei para o compatilhamento de alguns projetos em que eu já fiz, não são todos, já fiz muitos outros, em linguagens diferentes, mas estarei destacando aqui os 3 em que eu mais gostei.</i></p>
+            <div class="grid">
+                <article>
+                    <h3>Meu Blog Pessoal</h3>
+                    <p>O meu blog Pessoal, foi o meu segundo projeto criado com o Python utilizando o framework Django, e foi o que eu mais gostei de desenvolver, pois aprendi ferramentas com o Django e criei algo pessoal onde eu poderia adicionar trabalho e informações a partir dele. Após a conclusão eu fiz um deploy dele em um servidor do google cloud, que é possivel ser acessado através deste IP <a href="http://35.199.92.140" target="_blank">http://35.199.92.140</a>, infelizmente o serviço é pago e eu estou usando um período gratuito, ou seja, logo mais sairá do ar, porém irei a trás de algum serviço de hospedagem para deixa-lo sempre funcionando. Todo o seu código pode ser acessado através deste <a href="https://github.com/RaulTeles/BlogPessoal-DJANGO">LINK</a></p>
+                </article>
+                <article>
+                    <h3>Agenda WEB</h3>
+                    <p>A Agenda WEB foi o meu primeiro projeto no Python utilizando o freamework do Django, antecedendo o projeto do Blog Pessoal, foi o projeto em que eu tive a primeira experiência utilizando o Django e vi como ele é poderoso. Este projeto de Agenda tinha um objetivo de cadastrar usuários com algmas informações que no caso eram, Nome, numero telefônico, fotos, entre outras informações. Foi muito bom poder desenvolver ele. Hoje este projeto está no meu repositório do Github e todo o seu código pode ser acessado através deste <a href="https://github.com/RaulTeles/AgendaWEB-DJANGO" target="_blank">LINK</a>.</p>
+                </article>
+                <article>
+                    <h3 class="red-imgs">Redimensionador de Imagens</h3>
+                    <p>Este é outro projeto também desenvolvido com o Python, porém utilizando bibliotecas para utilizar uma interface gráfica. Eu fiz este Programa para uma demanda pessoal, em que eu administrava uma pagina de Intranet da minha empresa e era também que publicava Banners, artigos entre outras funções, e para algumas imagens era necessário ter um tamanho especifico e eu necessitava de um programa para isso, então eu desenvolvi este programa, eu utilizei a biblioteca PYQT5. Todo o seu código pode ser acessado através deste <a href="https://github.com/RaulTeles/RedimensionadorImagens-PYQT5" target="_blank">LINK</a></p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="galeria main-bg ">
+        <div id="galeria" class="galeria-content main-content">
+            <h2>Galeria</h2>
+            <p><i>Seção criada para exibição de imagens aleatórias</i></p>
+            <div class="grid">
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="imagem randomica">
+                </div>
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=22" alt="Imagem Randomica 2">
+                </div>
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=93" alt="Imagem Randomica 3">
+                </div>
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=45" alt="Imagem Randomica 3">
+                </div>
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=54" alt="Imagem Randomica 3">
+                </div>
+                <div class="galeria-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=63" alt="Imagem Randomica 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-bg section">
+        <div id="redes-sociais" class="main-content pessoal-content">
+            <h2>Minhas Redes Sociais</h2>
+            <div class="intro-img"><img src="assets/img/thumb-redes-sociais-novas.jpg"></div>
+            <!-- Trasnformar a tabela em respossiva -->
+            <div class="resposive-table">
+                <table class="tabela">
+                    <caption>Links</caption>
+                    <thead>
+                        <tr>
+                            <th>Linkedin </th>
+                            <th>Instagram </th>
+                            <th>Twitter </th>
+                            <th>Github </th>
+                            <th>Facebook </th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.linkedin.com/in/raul-teles/" target="_blank">ACESSE</a></td>
+                            <td><a href="https://www.instagram.com/teles_raul/" target="_blank">ACESSE</a></td>
+                            <td><a href="https://twitter.com/Teles_Raull" target="_blank">ACESSE</a></td>
+                            <td><a href="https://github.com/RaulTeles" target="_blank">ACESSE</a></td>
+                            <td><a href="https://www.facebook.com/raul.teles.7/" target="_blank">ACESSE</a></td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="img-principal section">
+        <div class="main-content contato-content">
+            <div class="intro-img"><img src="assets/img/contact-us.svg" alt="imagem de contato"></div>
+            <div class="contato-form">
+                <fieldset class="form-grid">
+                    <legend class="legenda">
+                        Me envie uma mesagem
+                    </legend>
+                    <div class="form-group">
+                        <label for="primeiro-nome">Primeiro Nome: </label>
+                        <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Digite o seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="ultimo-nome">Ultimo Nome: </label>
+                        <input type="text" name="ultimo-nome" id="ultimo-nome" placeholder="Digite o seu Sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="menssagem">Menssagem: </label>
+                        <textarea name="menssagem" id="menssagem" cols="30" rows="10" placeholder="Escreva sua Mensagem Aqui"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar a Menssagem</button>
+                    </div>
+                </fieldset>
+            
+            </div>
+        </div>
+    </section>
+    <footer id="footer-page" class="main-bg footer-page">
+        <p>
+            <a href="https://www.instagram.com/teles_raul/" target="_blank"> Desenvolvido por Raul Teles 📚📖📚</a>
+        </p>
+    </footer>
+
+    <a href="#intro" id = "voltar-inicio" class="voltar-inicio">⇧</a>
+
+</body>
+
+</html>
